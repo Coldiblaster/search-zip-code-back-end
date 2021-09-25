@@ -16,7 +16,7 @@ export default class cep1632592087075 implements MigrationInterface {
           },
           {
             name: 'cep',
-            type: 'int',
+            type: 'varchar',
           },
           {
             name: 'logradouro',
