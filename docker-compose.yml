@@ -1,0 +1,22 @@
+# Use postgres/example user/password credentials
+version: '3.1'
+
+services:
+  postgres:
+    image: postgres:alpine
+    restart: always
+    env_file: .env
+    environment:
+      POSTGRES_PASSWORD: ${PGPASSWORD}
+      POSTGRES_USER: ${PGUSER}
+      POSTGRES_DB: ${PGDATABASE}
+    ports:
+      - 5432:5432
+    volumes:
+      - ./.dbdata:/data/db
+    networks:
+      - net-1
+
+networks:
+  net-1:
+    driver: 'bridge'
