@@ -21,6 +21,7 @@ export default class cep1632592087075 implements MigrationInterface {
           {
             name: 'logradouro',
             type: 'varchar',
+            isNullable: true,
           },
           {
             name: 'complemento',
@@ -34,6 +35,7 @@ export default class cep1632592087075 implements MigrationInterface {
           {
             name: 'bairro',
             type: 'varchar',
+            isNullable: true,
           },
           {
             name: 'uf',
