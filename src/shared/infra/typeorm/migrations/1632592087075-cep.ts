@@ -5,7 +5,7 @@ export default class cep1632592087075 implements MigrationInterface {
     await queryRunner.query('CREATE EXTENSION IF NOT EXISTS "uuid-ossp"');
     await queryRunner.createTable(
       new Table({
-        name: 'cep',
+        name: 'endereco',
         columns: [
           {
             name: 'id',
@@ -26,6 +26,10 @@ export default class cep1632592087075 implements MigrationInterface {
             name: 'complemento',
             type: 'varchar',
             isNullable: true,
+          },
+          {
+            name: 'localidade',
+            type: 'varchar',
           },
           {
             name: 'bairro',
