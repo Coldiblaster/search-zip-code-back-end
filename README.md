@@ -13,7 +13,7 @@
   <a href="#warning-pré-requisitos">:small_blue_diamond: Pré-requisitos</a>
   <a href="#arrow_forward-como-rodar-a-aplicação">:small_blue_diamond: Como rodar a aplicação</a>
   <a href="#rocket-deploy">:small_blue_diamond: Deploy</a>
-  <a href="#open_file_folder-linguagem,-e-bibliotecas-utilizadas">:small_blue_diamond: Linguagem e bibliotecas utilizadas</a>
+  <a href="#open_file_folder-linguagem-e-bibliotecas-utilizadas">:small_blue_diamond: Linguagem e bibliotecas utilizadas</a>
 </p>
 
 
