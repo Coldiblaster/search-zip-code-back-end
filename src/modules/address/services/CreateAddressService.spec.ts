@@ -15,6 +15,14 @@ describe('CreateAddress', () => {
 
   it('should be able to create a new address', async () => {
     const address = await createAddress.execute({
+      zipCode: '19878-999',
+    });
+
+    expect(address).toHaveProperty('id');
+  });
+
+  it('should not be able to create a new identical zip code', async () => {
+    await fakeAddressRepository.create({
       bairro: 'Centro',
       cep: '19857852',
       localidade: 'Presidente Prudente',
@@ -23,6 +31,14 @@ describe('CreateAddress', () => {
       logradouro: 'Presidente vargas',
     });
 
-    expect(address).toHaveProperty('id');
+    await createAddress.execute({
+      zipCode: '19857852',
+    });
+
+    await expect(
+      createAddress.execute({
+        zipCode: '19857852',
+      })
+    ).rejects.toBeInstanceOf(AppError);
   });
 });
