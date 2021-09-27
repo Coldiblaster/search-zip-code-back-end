@@ -31,13 +31,17 @@ describe('CreateAddress', () => {
       logradouro: 'Presidente vargas',
     });
 
-    await createAddress.execute({
-      zipCode: '19857852',
-    });
-
     await expect(
       createAddress.execute({
         zipCode: '19857852',
+      })
+    ).rejects.toBeInstanceOf(AppError);
+  });
+
+  it('should return error if zip code does not exist in via zip', async () => {
+    await expect(
+      createAddress.execute({
+        zipCode: 'there is no zip code',
       })
     ).rejects.toBeInstanceOf(AppError);
   });
