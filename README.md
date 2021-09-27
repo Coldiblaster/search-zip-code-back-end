@@ -58,8 +58,8 @@ Passo a passo para executar o Deploy
 
 ## :open_file_folder: Linguagem e bibliotecas utilizadas
 
-- [x] NodeJs (https://nodejs.org/en/)
-- [x] TypeORM (https://typeorm.io/#/)
-- [x] Typescript (https://www.typescriptlang.org/)
-- [x] Axios (https://axios-http.com/)
-- [x] Express (https://expressjs.com/pt-br/)
+- [x] [NodeJs](https://nodejs.org/en/)
+- [x] [TypeORM](https://typeorm.io/#/)
+- [x] [Typescript](https://www.typescriptlang.org/)
+- [x] [Axios](https://axios-http.com/)
+- [x] [Express](https://expressjs.com/pt-br/)
