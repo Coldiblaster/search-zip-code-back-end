@@ -13,7 +13,7 @@ describe('ShowSingleAddress', () => {
     showSingleAddress = new ShowSingleAddress(fakeAddressRepository);
   });
 
-  it('should be able to list a single address looking for the id', async () => {
+  it('should be able to list a single address looking for the zip code', async () => {
     const state1 = await fakeAddressRepository.create({
       bairro: 'Centro',
       cep: '19857852',
@@ -32,7 +32,7 @@ describe('ShowSingleAddress', () => {
     });
 
     const listState = await showSingleAddress.execute({
-      cep: state1.id,
+      cep: state1.cep,
     });
 
     expect(listState).toEqual(state1);
