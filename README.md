@@ -12,7 +12,7 @@
   <a href="#thought_balloon-introdução">:small_blue_diamond: Introdução</a>
   <a href="#warning-pré-requisitos">:small_blue_diamond: Pré-requisitos</a>
   <a href="#arrow_forward-como-rodar-a-aplicação">:small_blue_diamond: Como rodar a aplicação</a>
-  <a href="#rocket-deploy">:small_blue_diamond: Deploy</a>
+  <a href="#rocket-testes">:small_blue_diamond: Testes</a>
   <a href="#open_file_folder-linguagem-e-bibliotecas-utilizadas">:small_blue_diamond: Linguagem e bibliotecas utilizadas</a>
 </p>
 
@@ -52,14 +52,20 @@ $ yarn migration:run
 $ yarn dev:server
 ```
 
-## :rocket: Deploy
+## :rocket: Testes
 
-Passo a passo para executar o Deploy
+Os testes do projeto foi realizando utilizando o framework Jest
+
+```bash
+# Iniciar a validação dos testes
+$ yarn test
+```
 
 ## :open_file_folder: Linguagem e bibliotecas utilizadas
 
 - [x] [NodeJs](https://nodejs.org/en/)
 - [x] [TypeORM](https://typeorm.io/#/)
+- [x] [Jest](https://jestjs.io/pt-BR/)
 - [x] [Typescript](https://www.typescriptlang.org/)
 - [x] [Axios](https://axios-http.com/)
 - [x] [Express](https://expressjs.com/pt-br/)
