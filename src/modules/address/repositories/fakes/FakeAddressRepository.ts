@@ -11,8 +11,6 @@ class FakeAddressRepository implements IAddressRepository {
   public async create(addressData: ICreateAddressDTO): Promise<Address> {
     const address = new Address();
 
-    console.log(address, addressData, uuid());
-
     Object.assign(address, { id: uuid() }, addressData);
 
     this.address.push(address);
