@@ -1,5 +1,4 @@
 import { Router } from 'express';
-import { celebrate, Segments, Joi } from 'celebrate';
 import AddressController from '../controllers/AddressController';
 
 const addressController = new AddressController();
