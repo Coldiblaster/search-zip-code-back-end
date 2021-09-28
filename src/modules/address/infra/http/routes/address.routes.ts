@@ -9,6 +9,6 @@ addressRouter.post('/', addressController.create);
 
 addressRouter.get('/', addressController.show);
 
-addressRouter.get('/:cep', addressController.index);
+addressRouter.get('/single/:cep', addressController.index);
 
 export default addressRouter;
