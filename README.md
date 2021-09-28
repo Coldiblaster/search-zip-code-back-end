@@ -47,7 +47,7 @@ $ code .
 # Crie o .env na raiz do repositório
 $ Copie todo conteúdo do .env.example e cole no .env
 # Crie o Banco de Dados relacional
-$ docker-compose up
+$ docker-compose up -d
 # Rode as migrations
 $ yarn migration:run
 # Inicie o Projeto
