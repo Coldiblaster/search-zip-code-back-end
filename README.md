@@ -44,6 +44,8 @@ $ cd search-zip-code-back-end
 $ yarn
 # Abra o código fonte no visual studio code
 $ code .
+# Crie o .env na raiz do repositório
+$ Copie todo conteúdo do .env.example e cole no .env
 # Crie o Banco de Dados relacional
 $ docker-compose up
 # Rode as migrations
